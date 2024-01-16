@@ -1,7 +1,15 @@
+struct MyOptional {
+    
+    var property = 123
+    func methof() {
+        print("I am a stuct's method")
+    }
+    
+}
 
-let myOptional: String?
+
+let myOptional: MyOptional?
 
 myOptional = nil
 
-let safeOptional = myOptional ?? "I am the default value."
-print(safeOptional)
+print(myOptional?.methof())
